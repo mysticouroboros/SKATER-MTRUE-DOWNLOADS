@@ -1,7 +1,7 @@
 
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SKATER MTRUE DOWNLOADS</title>
         <link rel="icon" type="image/x-icon" href="../mouth.png">
         <meta charset="UTF-8">
@@ -12,13 +12,29 @@
         <style>
             body {
                 background-color: #405e13;
-              height:400px;
-              width:900px;
                 font-family: 'Bitcount Grid Double';
+                max-width: 100%;
+                height: auto;
+                  margin: 0;
+  padding: 0;
 
             }
 
-       
+       @media (max-width: 600px) {
+  img {
+    max-width: 90%;
+    height: auto;
+    position: static; /* stack images naturally */
+  }
+  .heading {
+font-size: clamp(16px, 2vw, 20px);    left: 0;
+    text-align: center;
+       width: 100%;
+  }
+}
+img:active {
+  opacity: 0.7;
+}
           
           #beedance{
 animation: beedance 5s infinite;
@@ -39,8 +55,14 @@ p{
     left:250px;
     color: white;
     font-size: 33px;
+    
 }
-          
+  header {
+  display: flex;
+  justify-content: center; /* or space-between */
+  align-items: center;
+}
+        
           
         </style>
     </head>
